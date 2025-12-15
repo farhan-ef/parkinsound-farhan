@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parkin Sound | Rental Sound System Profesional untuk Event</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1><span class="logo-highlight">Parkin</span>Sound</h1>
+                <p class="logo-tagline">Professional Audio Solutions</p>
+            </div>
+            <nav class="nav-links">
+                <a href="#home" class="active"><i class="fas fa-home"></i> Home</a>
+                <a href="#about"><i class="fas fa-info-circle"></i> Tentang</a>
+                <a href="#services"><i class="fas fa-sliders-h"></i> Layanan</a>
+                <a href="#gallery"><i class="fas fa-images"></i> Galeri</a>
+                <a href="#testimonials"><i class="fas fa-comments"></i> Testimoni</a>
+                <a href="#contact"><i class="fas fa-phone-alt"></i> Kontak</a>
+            </nav>
+            <div class="nav-cta">
+                <button class="btn-primary btn-small" onclick="scrollKontak()">
+                    <i class="fas fa-headset"></i> Hubungi
+                </button>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content animate__animated animate__fadeIn">
+                <h2 class="hero-title">Sound System <span class="highlight">Profesional</span> untuk Event Anda</h2>
+                <p class="hero-subtitle">Solusi audio terbaik untuk konser, wedding, seminar & berbagai acara lainnya dengan kualitas suara premium</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Event Terselesaikan</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Tahun Pengalaman</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Kepuasan Klien</span>
+                    </div>
+                </div>
+                <div class="cta-buttons">
+                    <button onclick="scrollKontak()" class="btn-primary btn-large">
+                        <i class="fas fa-calendar-check"></i> Pesan Sekarang
+                    </button>
+                    <button class="btn-secondary btn-large" onclick="toggleVideo()">
+                        <i class="fas fa-play-circle"></i> Lihat Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Video Modal -->
+        <div id="videoModal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal" onclick="toggleVideo()">&times;</span>
+                <h3>Demo Peralatan Parkin Sound</h3>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/9No-FiEInLA" title="Sound System Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Tentang <span class="highlight">Parkin Sound</span></h2>
+                <p class="section-subtitle">Partner terpercaya untuk kebutuhan audio profesional Anda</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text animate__animated animate__fadeInLeft">
+                    <p><span class="lead-text">Parkin Sound</span> adalah penyedia jasa rental sound system dan peralatan event profesional dengan kualitas terbaik di Indonesia. Dengan pengalaman lebih dari 10 tahun, kami telah melayani berbagai jenis acara mulai dari skala kecil hingga besar.</p>
+                    <p>Kami memahami bahwa suara adalah elemen penting dalam kesuksesan sebuah acara. Oleh karena itu, kami selalu menggunakan peralatan terbaru dari merek ternama seperti JBL, Shure, Yamaha, dan Allen & Heath untuk memastikan kualitas audio yang optimal.</p>
+                    <div class="features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle feature-icon"></i>
+                            <div>
+                                <h4>Peralatan Berkualitas Tinggi</h4>
+                                <p>Menggunakan peralatan dari merek ternama dengan teknologi terbaru</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-user-tie feature-icon"></i>
+                            <div>
+                                <h4>Tim Teknisi Profesional</h4>
+                                <p>Teknisi berpengalaman dan bersertifikat siap mendukung acara Anda</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-clock feature-icon"></i>
+                            <div>
+                                <h4>Layanan 24/7</h4>
+                                <p>Siap melayani kebutuhan Anda kapan saja, termasuk darurat</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-tags feature-icon"></i>
+                            <div>
+                                <h4>Harga Kompetitif</h4>
+                                <p>Penawaran harga terbaik dengan kualitas yang tidak diragukan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image animate__animated animate__fadeInRight">
+                    <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Sound System Parkin Sound">
+                    <div class="image-badge">
+                        <span>10+ Tahun Pengalaman</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section dark">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Layanan <span class="highlight">Kami</span></h2>
+                <p class="section-subtitle">Berbagai solusi audio profesional untuk setiap jenis acara</p>
+            </div>
+            <div class="cards">
+                <div class="card animate__animated animate__fadeInUp">
+                    <div class="card-icon">
+                        <i class="fas fa-guitar"></i>
+                    </div>
+                    <h3>Sound System Konser</h3>
+                    <p>Solusi audio lengkap untuk konser musik indoor/outdoor dengan line array system, monitor stage, dan mixing console profesional.</p>
+                    <ul class="service-features">
+                        <li>Line Array System</li>
+                        <li>Mixing Console Digital</li>
+                        <li>Monitor Stage</li>
+                        <li>Power Amplifier</li>
+                    </ul>
+                    <button class="btn-service">Detail Layanan</button>
+                </div>
+                <div class="card animate__animated animate__fadeInUp" style="animation-delay: 0.1s;">
+                    <div class="card-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Sound Wedding</h3>
+                    <p>Paket khusus pernikahan dengan sound system elegan, mikrofon wireless, dan background music untuk menciptakan momen spesial.</p>
+                    <ul class="service-features">
+                        <li>Wireless Microphone</li>
+                        <li>Background Music System</li>
+                        <li>Sound untuk Outdoor Wedding</li>
+                        <li>DJ Equipment</li>
+                    </ul>
+                    <button class="btn-service">Detail Layanan</button>
+                </div>
+                <div class="card animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+                    <div class="card-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Sound Seminar & Corporate</h3>
+                    <p>Sistem audio untuk presentasi, konferensi, dan meeting dengan kejelasan suara optimal dan peralatan pendukung lengkap.</p>
+                    <ul class="service-features">
+                        <li>Conference System</li>
+                        <li>Lapel Microphone</li>
+                        <li>Presentation Audio</li>
+                        <li>Recording System</li>
+                    </ul>
+                    <button class="btn-service">Detail Layanan</button>
+                </div>
+                <div class="card animate__animated animate__fadeInUp" style="animation-delay: 0.3s;">
+                    <div class="card-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Lighting & Stage</h3>
+                    <p>Pencahayaan panggung profesional, moving head, laser effect, dan desain stage untuk meningkatkan visual acara Anda.</p>
+                    <ul class="service-features">
+                        <li>Moving Head Lights</li>
+                        <li>Stage Design</li>
+                        <li>Laser Effect</li>
+                        <li>LED Screen</li>
+                    </ul>
+                    <button class="btn-service">Detail Layanan</button>
+                </div>
+            </div>
+            
+            <div class="service-cta">
+                <p>Butuh paket khusus atau konsultasi? Tim kami siap membantu!</p>
+                <button onclick="scrollKontak()" class="btn-primary">
+                    <i class="fas fa-comments"></i> Konsultasi Gratis
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Galeri <span class="highlight">Peralatan</span></h2>
+                <p class="section-subtitle">Lihat peralatan berkualitas tinggi yang kami gunakan untuk acara Anda</p>
+            </div>
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="speaker">Speaker</button>
+                <button class="filter-btn" data-filter="mixer">Mixer</button>
+                <button class="filter-btn" data-filter="microphone">Microphone</button>
+                <button class="filter-btn" data-filter="lighting">Lighting</button>
+            </div>
+            <div class="gallery">
+                <div class="gallery-item" data-category="speaker">
+                    <img src="https://images.unsplash.com/photo-1571330735066-03aaa9429d89?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Line Array Speaker">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h4>Line Array Speaker System</h4>
+                            <p>JBL VTX Series untuk konser besar</p>
+                            <button class="btn-gallery">Lihat Detail</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="mixer">
+                    <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Digital Mixer">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h4>Digital Mixing Console</h4>
+                            <p>Allen & Heath dLive series dengan 64 channel</p>
+                            <button class="btn-gallery">Lihat Detail</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="microphone">
+                    <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Wireless Microphone">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h4>Wireless Microphone System</h4>
+                            <p>Shure ULX-D series dengan kualitas broadcast</p>
+                            <button class="btn-gallery">Lihat Detail</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="lighting">
+                    <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Stage Lighting">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h4>Stage Lighting System</h4>
+                            <p>Moving head dan LED wash untuk efek visual maksimal</p>
+                            <button class="btn-gallery">Lihat Detail</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="speaker">
+                    <img src="https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Monitor Speaker">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h4>Monitor Stage Speaker</h4>
+                            <p>Yamaha DXR series untuk monitoring di atas panggung</p>
+                            <button class="btn-gallery">Lihat Detail</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="mixer">
+                    <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Analog Mixer">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h4>Analog Mixing Console</h4>
+                            <p>Soundcraft GB4 32-channel untuk setup klasik</p>
+                            <button class="btn-gallery">Lihat Detail</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section dark">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Testimoni <span class="highlight">Klien</span></h2>
+                <p class="section-subtitle">Apa kata mereka tentang layanan Parkin Sound</p>
+            </div>
+            <div class="testimonials">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Sound system dari Parkin Sound sangat memukau! Acara konser kami berjalan lancar dengan kualitas audio yang luar biasa. Teknisinya juga sangat profesional."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client">
+                        <div>
+                            <h4>Budi Santoso</h4>
+                            <span>Event Manager, Java Music Festival</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Untuk acara pernikahan kami, Parkin Sound memberikan pelayanan yang sangat memuaskan. Sound system-nya jernih dan tidak ada feedback. Terima kasih!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client">
+                        <div>
+                            <h4>Sari Dewi</h4>
+                            <span>Pernikahan Sari & Andi, Grand Ballroom</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Kami menggunakan Parkin Sound untuk seminar nasional perusahaan. Audio jelas di seluruh ruangan, bahkan di bagian belakang. Sangat recommended!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Client">
+                        <div>
+                            <h4>Hendra Wijaya</h4>
+                            <span>Director, Global Corp Indonesia</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Hubungi <span class="highlight">Kami</span></h2>
+                <p class="section-subtitle">Siap melayani kebutuhan sound system untuk acara Anda</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Alamat Kantor</h3>
+                            <p>Jl. Jawara, Pasirnagara, Cibeureum<br>Kota Banjar, Jawa Barat 46313</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Telepon / WhatsApp</h3>
+                            <p>0853-5322-2333</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Email</h3>
+                            <p>parkinproduction@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Jam Operasional</h3>
+                            <p>Senin - Jumat: 08.00 - 22.00 WIB<br>Sabtu - Minggu: 08.00 - 24.00 WIB<br><strong>Emergency: 24/7</strong></p>
+                        </div>
+                    </div>
+                    <div class="contact-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2653.385793237189!2d108.48331157271777!3d-7.365790572479456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f61b77ad31111%3A0x8fde0dfd9e854fca!2sJl.%20Jawara%2C%20Kec.%20Banjar%2C%20Kota%20Banjar%2C%20Jawa%20Barat!5e1!3m2!1sid!2sid!4v1765789918038!5m2!1sid!2sid" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Form Pemesanan / Konsultasi</h3>
+                    <form id="bookingForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nama Lengkap *</label>
+                                <input type="text" id="name" placeholder="Nama Anda" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Nomor Telepon *</label>
+                                <input type="tel" id="phone" placeholder="08xxxxxxxxxx" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" placeholder="email@anda.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="event-type">Jenis Acara *</label>
+                            <select id="event-type" required>
+                                <option value="" disabled selected>Pilih jenis acara</option>
+                                <option value="wedding">Pernikahan</option>
+                                <option value="concert">Konser / Musik</option>
+                                <option value="seminar">Seminar / Konferensi</option>
+                                <option value="corporate">Corporate Event</option>
+                                <option value="other">Lainnya</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="event-date">Tanggal Acara *</label>
+                                <input type="date" id="event-date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="budget">Rentang Budget</label>
+                                <select id="budget">
+                                    <option value="" selected>Pilih budget</option>
+                                    <option value="1-5">Rp 1-5 juta</option>
+                                    <option value="5-10">Rp 5-10 juta</option>
+                                    <option value="10-20">Rp 10-20 juta</option>
+                                    <option value="20+">> Rp 20 juta</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Detail Kebutuhan / Pertanyaan *</label>
+                            <textarea id="message" rows="5" placeholder="Jelaskan kebutuhan sound system, lokasi acara, kapasitas audience, dan detail lainnya..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary btn-block">
+                            <i class="fas fa-paper-plane"></i> Kirim Permintaan Penawaran
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <h3><span class="logo-highlight">Parkin</span>Sound</h3>
+                        <p class="logo-tagline">Professional Audio Solutions</p>
+                    </div>
+                    <p>Parkin Sound adalah penyedia jasa rental sound system profesional untuk berbagai jenis acara dengan kualitas terbaik dan tim teknisi berpengalaman.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Layanan Kami</h4>
+                    <ul>
+                        <li><a href="#services">Rental Sound Konser</a></li>
+                        <li><a href="#services">Sound System Wedding</a></li>
+                        <li><a href="#services">Audio Seminar & Corporate</a></li>
+                        <li><a href="#services">Lighting & Stage Design</a></li>
+                        <li><a href="#services">Installation Sound System</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Tautan Cepat</h4>
+                    <ul>
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#about">Tentang Kami</a></li>
+                        <li><a href="#services">Layanan</a></li>
+                        <li><a href="#gallery">Galeri</a></li>
+                        <li><a href="#testimonials">Testimoni</a></li>
+                        <li><a href="#contact">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Dapatkan info promo dan tips seputar sound system untuk event Anda</p>
+                    <form id="newsletterForm">
+                        <input type="email" placeholder="Email Anda" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    <div class="payment-methods">
+                        <p>Metode Pembayaran:</p>
+                        <div class="payment-icons">
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fab fa-cc-paypal"></i>
+                            <i class="fas fa-university"></i>
+                            <i class="fas fa-qrcode"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-bottom">
+                <p>&copy; 2025 <strong>Parkin Sound</strong>. All Rights Reserved. | Designed with <i class="fas fa-heart"></i> for Professional Audio Solutions</p>
+                <div class="footer-legal">
+                    <a href="#">Syarat & Ketentuan</a>
+                    <a href="#">Kebijakan Privasi</a>
+                    <a href="#">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/6285353222333" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
